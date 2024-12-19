@@ -1,4 +1,8 @@
 
+import ConnectOnSocials from "@/components/connect-on-socials";
+import ContactForm from "@/components/contact-form";
+import { FloatingDockDemo } from "@/components/floating-dock-component";
+import { SignupFormDemo } from "@/components/signup-form-demo";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { CardHoverEffectDemo } from "@/components/ui/card-hover";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
@@ -23,14 +27,14 @@ export default function Home() {
     <BackgroundBeamsWithCollision>
       <div className="bg-black/[0.96] min-h-full w-full">
     <div className="h-[40rem] flex justify-center flex-col items-center px-4">
-      <div className="text-2xl relative z-20 md:text-4xl lg:text-7xl font-bold text-center text-white dark:text-white font-sans tracking-tight">
-      <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
+      <div className="text-2xl relative z-20 md:text-3xl lg:text-7xl font-bold text-center text-white dark:text-white font-sans tracking-tight">
+      <div className="relative mx-auto inline-block w-auto [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
 
-        <div className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
+        <div className=" relative roboto bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
         Build
-        <FlipWords className=" text-purple-500 via-violet-500" words={words} /> <br />
+        <FlipWords className=" text-purple-500 via-violet-500 roboto" words={words} /> <br />
         </div>
-        Web Apps with me with latest Technology
+       <span className="roboto text-wrap sm:w-[70%] "> Web Apps with me with latest Technology</span>
         </div>
       </div>
       <div className="flex mt-12">
@@ -54,7 +58,7 @@ export default function Home() {
         fill="white"
       />
       <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
-        <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+        <h1 className="text-4xl roboto md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
           About Me
         </h1>
         <p className="mt-20 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
@@ -66,7 +70,7 @@ export default function Home() {
   </div>
 <div  className="section-2 flex flex-col bg-black/[0.96]">
 <div className=" lg:flex lg:p-16 sm:flex sm:justify-center sm:items-center">
-  <h1 className="flex justify-center text-3xl text-white">
+  <h1 className="flex roboto justify-center text-3xl text-white">
     My Tech Stack
   </h1> 
 
@@ -75,16 +79,21 @@ export default function Home() {
 <CardHoverEffectDemo/>
 </div>
 </div>
-<div className="section-3 h-screen bg-black/[0.96]">
+<div className="section-3  bg-black/[0.96]">
+<div className="flex flex-col gap-3">
+<div>
+  <h1 className="text-white roboto text-3xl flex items-center justify-center">My Projects</h1>
+</div>
   <Tab/>
 </div>
-<div className="h-[100vh]">
+</div>
+<div className="">
+  
 <div className="h-[40rem] rounded-md bg-neutral-900 flex flex-col items-center justify-center relative w-full">
-      <h2 className="relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">
-        <span>Shooting Star</span>
-        <span className="text-white text-lg font-thin">x</span>
-        <span>Star Background</span>
-      </h2>
+
+ 
+       <ConnectOnSocials/>
+        
       <ShootingStars />
       <StarsBackground />
     </div>

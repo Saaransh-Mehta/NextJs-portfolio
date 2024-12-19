@@ -70,7 +70,7 @@ export function Tab() {
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
+    <div className="h-[28rem] md:h-[48rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-40">
       <Tabs tabs={tabs} />
     </div>
   );
@@ -83,7 +83,7 @@ const DummyContent = () => {
       alt="dummy image"
       width="1000"
       height="1000"
-      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+      className="object-cover mb-2 object-left-top h-[70%]  md:h-[80%] absolute -bottom-10 inset-x-0 w-[95%] rounded-xl mx-auto"
     />
   );
 };
