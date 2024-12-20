@@ -22,7 +22,7 @@ export default function Home() {
 
   const words = ["better", "customizable", "beautiful", "modern"];
   return (
-    <div className="bg-black/[0.96]">
+    <div className="bg-black/[0.96] overflow-auto">
       <div>
     <BackgroundBeamsWithCollision>
       <div className="bg-black/[0.96] min-h-full w-full">
